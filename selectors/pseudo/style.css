@@ -1,0 +1,25 @@
+::selection{
+    color:red;
+    background-color:yellow;
+}   
+::marker {
+color: red;
+font-size: 23px;
+};
+    
+  
+    
+
+input{
+    color:blue;
+};
+
+:placeholder{
+    color:red;
+    font-style:italic;
+};
+
+button:hover{
+    background-color:blue;
+    color:red;
+}
