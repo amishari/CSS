@@ -1,0 +1,21 @@
+.wraper{
+    width:100%;
+    column-count:2;
+    column-gap:10px;
+  }
+.item{
+width:100%;
+min-height:100px;
+margin-bottom:10px;
+break-inside: avoid;
+border:1px solid red;
+border-radius:10px;
+}
+.item:nth-child(2n){
+background:blue;
+min-height:150px;
+}
+.item:nth-child(3n){
+background:purple;
+
+}
