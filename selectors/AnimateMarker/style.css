@@ -1,0 +1,41 @@
+li {
+    padding-left: 8px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+li::marker{
+    
+    /* for tick number alt+251
+    content: "√";  */
+
+    content:"(" counter(list-item) ")" ;
+    color:darkgreen;
+    
+    transition: 0.3 color;
+}
+li:hover::marker {
+    color:red;
+}
+
+
+/*for animating the marker */
+li::marker{
+    
+    content:"(" counter(list-item) ")" ;
+    color:darkgreen;
+    animation: marker-animation 5s ease-out backwards;
+    
+}
+li:nth-child(1)::marker{
+    animation-delay: 1s;
+}
+li:nth-child(2)::marker{
+    animation-delay: 2s;
+}
+li:nth-child(3)::marker{
+    animation-delay: 3s;
+}
+li:nth-child(4)::marker{
+    animation-delay:4s;
+}
+
